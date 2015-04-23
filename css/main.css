@@ -1,0 +1,216 @@
+/***************************************
+FONT IMPORTS
+***************************************/
+@import url(http://fonts.googleapis.com/css?family=Halant:300,400|Open+Sans+Condensed:300,700);
+/***************************************
+GENERAL
+***************************************/
+
+* {
+  box-sixing: border-box;
+}
+
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 1.05rem;
+  color: #353432;
+}
+
+h2 {
+  color: #fff;
+  letter-spacing: 3px;
+}
+
+h3 {
+  font-size: 2.3rem;
+  color: #353432;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+/***************************************
+NAV BAR
+***************************************/
+
+.nav {
+  padding-right: 15px;
+  color: #fff;
+  font-size: 1.1em;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav li {
+  display: inline-block;
+	padding: 0 20px;
+	border-right: 2px solid;
+  font-size: 1.1rem;
+}
+
+.nav li:last-child {
+	border: none;
+}
+
+.nav ul li a:hover {
+  color: rgba(255, 255, 255, 0.44);
+}
+
+/***************************************
+HEADER
+***************************************/
+
+.main-header {
+  padding-top: 200px;
+  height: 500px;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.title h1 {
+  color: #fff;
+  letter-spacing: 2px;
+  font-family: 'Times New Roman';
+  text-transform: lowercase;
+  font-size: 5rem;
+  width: 70%;
+  margin: auto;
+  padding-bottom: 5px;
+  border-bottom: 2px solid;
+}
+
+.title h2 {
+  margin: 10px;
+  font-weight: 300;
+}
+
+.nav-header {
+  margin-bottom: 20px;
+}
+
+.nav-header li {
+  border-color: #4E4D4A;
+}
+
+
+
+/***************************************
+FOOTER
+***************************************/
+
+.main-footer {
+  padding-top: 10px;
+  height: 50px;
+  background-color: #353432;
+  color: #fff;
+  font-size: .9rem;
+}
+
+.copyright-footer {
+  text-align: left;
+  padding-left: 20px;
+  float: left;
+}
+
+.nav-footer {
+  text-align: right;
+  float: right;
+}
+
+.social-media-footer-container {
+  padding-top: 12px;
+  padding-left: 15px;
+  float: left;
+  width: 78px;
+}
+
+.social-media-icon a img {
+  height: 18px;
+  width: 18px;
+  padding: 0 5px;
+  float: left;
+  -webkit-duration: .3s;
+	-moz-duration: .3s;
+	-o-duration: .3s;
+	transition-duration: .3s;
+ }
+
+ .social-media-icon a img:hover {
+	transform: scale(1.25);
+}
+
+.social-media-icon .facebook-footer {
+  width: 10px;
+}
+
+
+/***************************************
+MEDIA QUERIES
+***************************************/
+
+@media (max-width: 710px) {
+
+  /***************************************
+  FOOTER (MEDIA QUERY)
+  ***************************************/
+
+  .main-footer {
+    height: 140px;
+    text-align: center;
+  }
+
+  .copyright-footer {
+    text-align: center;
+    width: 100%;
+    padding-left: 0;
+    margin: auto;
+    clear: both;
+  }
+
+  .social-media-footer-container {
+    width: 100%;
+    padding: 5px 0;
+    margin: 0px auto;
+  }
+
+  .social-media-icon {
+    display: inline;
+  }
+
+  .social-media-footer-container a img {
+    float: none;
+  }
+
+  .footer-wrapper {
+    float: none;
+    margin: auto;
+  }
+
+  .nav-footer {
+    padding-right: 0;
+    clear: both;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+
+}
+
+/***************************************
+PALETTE
+
+-2B4E72 - Water Ends
+-2790B0 - Water Begins
+-94BA65 - Grass Always Regrows
+-353432 - Losing Hope
+-4E4D4A - Dark Days
+
+***************************************/

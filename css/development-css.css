@@ -1,0 +1,29 @@
+/***************************************
+HEADER - VIDEOS PAGE
+***************************************/
+
+.pictures-header {
+  background: linear-gradient(0deg, #fff, transparent 40%),
+              url("../img/development-header.jpg") no-repeat center;
+  background-size: cover;
+}
+
+/***************************************
+NAV BAR - VIDEOS PAGE
+***************************************/
+
+a[href^="development.html"] {
+  color: rgba(255, 255, 255, 0.44);
+}
+
+
+/***************************************
+PALETTE
+
+-2B4E72 - Water Ends
+-2790B0 - Water Begins
+-94BA65 - Grass Always Regrows
+-353432 - Losing Hope
+-4E4D4A - Dark Days
+
+***************************************/
