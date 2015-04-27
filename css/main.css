@@ -1,7 +1,7 @@
 /***************************************
 FONT IMPORTS
 ***************************************/
-@import url(http://fonts.googleapis.com/css?family=Halant:300,400|Open+Sans+Condensed:300,700);
+@import url(http://fonts.googleapis.com/css?family=Enriqueta:400,700|Open+Sans:300,400,600);
 /***************************************
 GENERAL
 ***************************************/
@@ -11,10 +11,10 @@ GENERAL
 }
 
 body {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   text-align: center;
-  font-size: 1.05rem;
+  font-size: .9rem;
   color: #353432;
 }
 
@@ -24,8 +24,10 @@ h2 {
 }
 
 h3 {
+  font-family: 'Enriqueta';
   font-size: 2.3rem;
-  color: #353432;
+  font-weight: 400;
+  color: #ababab;
 }
 
 a,
@@ -40,44 +42,110 @@ NAV BAR
 ***************************************/
 
 .nav {
-  padding-right: 15px;
-  color: #fff;
-  font-size: 1.1em;
+  background-color: #282828;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 500;
+  height: 60px;
+}
+
+nav {
+  height: 100%;
+}
+
+.mainnav-right {
+  float: right;
+  height: 100%;
+}
+
+.nav p {
+  text-align: left;
+  float: left;
+  margin: 0;
+  padding: 16px 10px;
+  font-family: 'Times New Roman';
+  letter-spacing: 3px;
+}
+
+.nav a {
+  color: #d7d7d7;
+  font-size: 1.5rem;
+  transition-duration: .3s
+}
+
+.nav a:hover {
+  color: rgb(255, 255, 255);
 }
 
 .nav ul {
   list-style: none;
   padding: 0;
+  height: 100%;
+  margin: 0;
+  float: left;
 }
 
 .nav li {
   display: inline-block;
 	padding: 0 20px;
-	border-right: 2px solid;
-  font-size: 1.1rem;
+  font-size: .8rem;
+  font-weight: 400;
+  padding: 20px;
+  letter-spacing: 1.1px;
 }
 
-.nav li:last-child {
-	border: none;
+.nav ul a li {
+  color: #d7d7d7;
+  transition-duration: .3s;
 }
 
-.nav ul li a:hover {
-  color: rgba(255, 255, 255, 0.44);
+.nav ul a li:hover {
+  color: rgb(255, 255, 255);
+}
+
+.selected {
+  color: rgba(255, 255, 255);
+}
+
+.farnav-right {
+  float: left;
+  height: 100%;
+  width: 105px;
+  background: #4c4c4c;
+  transition-duration: .3s;
+}
+
+.farnav-right:hover {
+  background: #313131;
+}
+
+.contact {
+  padding-top: 18px;
+}
+
+#selected {
+  color: rgb(255, 255, 255);
 }
 
 /***************************************
 HEADER
 ***************************************/
 
-.main-header {
-  padding-top: 200px;
-  height: 500px;
-  text-shadow: 1px 1px 1px #000;
+
+
+.header-wrapper {
+  padding-top: 225px;
+}
+
+.headbg-overlay {
+  background: rgba(0,0,0,.4);
+  height: 100%;
 }
 
 .title h1 {
   color: #fff;
-  letter-spacing: 2px;
+  letter-spacing: 6px;
   font-family: 'Times New Roman';
   text-transform: lowercase;
   font-size: 5rem;
@@ -101,16 +169,15 @@ HEADER
 }
 
 
-
 /***************************************
 FOOTER
 ***************************************/
 
 .main-footer {
   padding-top: 10px;
-  height: 50px;
-  background-color: #353432;
-  color: #fff;
+  height: 60px;
+  background-color: #fff;
+  color: #000000;
   font-size: .9rem;
 }
 
@@ -120,21 +187,16 @@ FOOTER
   float: left;
 }
 
-.nav-footer {
-  text-align: right;
-  float: right;
-}
-
 .social-media-footer-container {
-  padding-top: 12px;
+  padding-top: 15px;
   padding-left: 15px;
   float: left;
-  width: 78px;
+  width: 90px;
 }
 
 .social-media-icon a img {
-  height: 18px;
-  width: 18px;
+  height: 20px;
+  width: 20px;
   padding: 0 5px;
   float: left;
   -webkit-duration: .3s;
@@ -144,19 +206,112 @@ FOOTER
  }
 
  .social-media-icon a img:hover {
-	transform: scale(1.25);
+	transform: scale(1.15);
 }
 
 .social-media-icon .facebook-footer {
   width: 10px;
 }
 
+/***************************************
+CONTACT FORM
+***************************************/
+
+.contact-form {
+  display: ;
+}
+
+form {
+  border: 5px solid #6fcdaf;
+  width: 500px;
+  margin: auto;
+  height: 400px;
+}
+
+form label {
+  display: block;
+  margin-right: 20px;
+}
+
+input,
+textarea {
+  height: 20px;
+  width: 300px;
+  background: #f5f5f5;
+  border: 1px solid #e5e5e5;
+}
+
+input:focus {
+  background: #fff;
+}
+
+textarea {
+  height: 50px;
+
+}
+
+form div {
+  font-weight: 600;
+  margin: 20px;
+}
+
+.button button {
+  height: 65px;
+  width: 225px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #6fcdaf;
+  background: rgba(255,255,255,.0);
+  border: 5px solid #6fcdaf;
+  transition-duration: .3s;
+}
+
+.button button:hover {
+  background: #6fcdaf;
+  color: #fff;
+}
 
 /***************************************
 MEDIA QUERIES
 ***************************************/
 
 @media (max-width: 710px) {
+
+  /***************************************
+  NAV BAR
+  ***************************************/
+
+  .nav {
+    height: 240px;
+  }
+
+  .nav p {
+    text-align: center;
+    float: none;
+  }
+
+  .mainnav-right {
+    float: none;
+    width: 50%;
+    margin: auto;
+  }
+
+  .mainnav-right ul {
+    margin: auto;
+    float: none;
+  }
+
+  .mainnav-right ul li {
+    display: block;
+  }
+
+  .farnav-right {
+    padding-top: 20px;
+    background: transparent;
+    display: none;
+    float: none;
+    margin: auto;
+  }
 
   /***************************************
   FOOTER (MEDIA QUERY)
@@ -193,15 +348,6 @@ MEDIA QUERIES
     float: none;
     margin: auto;
   }
-
-  .nav-footer {
-    padding-right: 0;
-    clear: both;
-    width: 100%;
-    margin: auto;
-    text-align: center;
-  }
-
 }
 
 /***************************************

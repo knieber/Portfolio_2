@@ -2,20 +2,24 @@
 HEADER - VIDEOS PAGE
 ***************************************/
 
-.pictures-header {
-  background: linear-gradient(0deg, #fff, transparent 40%),
-              url("../img/development-header.jpg") no-repeat center;
+.development-header {
+  background: url("../img/development-header.jpg") no-repeat center;
   background-size: cover;
+  height: 575px;
 }
+
 
 /***************************************
-NAV BAR - VIDEOS PAGE
+MEDIA QUERIES
 ***************************************/
 
-a[href^="development.html"] {
-  color: rgba(255, 255, 255, 0.44);
-}
+@media (max-width: 976px) {
 
+  .header-wrapper {
+    padding-top: 175px;
+  }
+
+}
 
 /***************************************
 PALETTE

@@ -4,29 +4,46 @@ HEADER - INDEX PAGE
 ***************************************/
 
 .home-header {
-  background: linear-gradient(0deg, #fff, transparent 40%),
-              url("../img/HeaderBG.jpg") no-repeat center;
+  background: url("../img/HeaderBG.jpg") no-repeat center;
   background-size: cover;
+  height: 650px;
 }
 
-/***************************************
-NAV BAR - INDEX PAGE
-***************************************/
-
-a[href^="index.html"] {
-  color: rgba(255, 255, 255, 0.44);
+.contact-button {
+  padding-top: 115px;
+  margin: auto;
 }
+
+.contact-button button {
+  height: 65px;
+  width: 225px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #6fcdaf;
+  background: rgba(255,255,255,.0);
+  border: 5px solid #6fcdaf;
+  transition-duration: .3s;
+}
+
+.contact-button button:hover {
+  background: #6fcdaf;
+  color: #fff;
+}
+
 
 /***************************************
 SECTION 1 - PORTFOLIO
 ***************************************/
 
 #portfolio {
-  height: 400px;
+  height: 250px;
   margin: auto;
-  padding-top: 50px;
   width: 85%;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
+}
+
+#portfolio h3 {
+  margin: 20px;
 }
 
 .icon-block {
@@ -38,15 +55,17 @@ SECTION 1 - PORTFOLIO
 
 .icon-block p {
   margin-top: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .icon-block:nth-of-type(1n+2) {
-  margin-left: 9%;
+  margin-left: 9.5%;
 }
 
 .icon {
-  width: 150px;
-  height: 100px;
+  width: 125px;
+  height: 80px;
   padding-bottom: 5px;
 	-webkit-duration: .3s;
 	-moz-duration: .3s;
@@ -55,12 +74,12 @@ SECTION 1 - PORTFOLIO
  }
 
 .icon:hover {
-	transform: scale(1.25);
+	transform: scale(1.10);
 }
 
 .video {
   padding: 20px 0 5px 0;
-  height: 75px;
+  height: 60px;
 }
 
 /***************************************
@@ -68,18 +87,24 @@ SECTION 2 - ABOUT ME
 ***************************************/
 
 #about-me {
-  height: 500px;
+  height: 550px;
   margin: auto;
-  padding-top: 30px;
   width: 100%;
-  padding-bottom: 60px;
   background: url("../img/Coffeeshop.jpg") no-repeat center;
   background-size: cover;
-  color: #fff;
+  color: #d9d9d9;
 }
+
+.about-me-overlay {
+  background: rgba(112,207,174,.4);
+  height: 100%;
+  padding-top: 30px;
+}
+
 
 #about-me h3 {
   color: #fff;
+  margin: 0 0 15px 0;
 }
 
 .profile-icon {
@@ -100,6 +125,7 @@ SECTION 2 - ABOUT ME
 #about-me p::first-line {
   font-size: 1.3rem;
   font-weight: bold;
+  color: #fff;
 }
 
 .social-media img {
@@ -113,7 +139,7 @@ SECTION 2 - ABOUT ME
  }
 
  .social-media img:hover {
-	transform: scale(1.25);
+	transform: scale(1.15);
 }
 
 @media (max-width: 710px) {
@@ -123,7 +149,7 @@ SECTION 2 - ABOUT ME
   ***************************************/
 
   #portfolio {
-    height: 900px;
+    height: 620px;
   }
 
   .icon-block {
@@ -147,26 +173,18 @@ SECTION 2 - ABOUT ME
   ***************************************/
 
   #about-me {
-    padding-bottom: 110px;
+    height: 600px;
   }
 }
 
 @media (max-width: 550px){
 
   /***************************************
-  SECTION 1 - PORTFOLIO (MEDIA QUERY)
-  ***************************************/
-
-  #portfolio {
-    padding-bottom: 75px;
-  }
-
-  /***************************************
   SECTION 2 - ABOUT ME (MEDIA QUERY)
   ***************************************/
 
   #about-me {
-    padding-bottom: 180px;
+    height: 625px;
   }
 
 }

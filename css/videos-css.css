@@ -2,19 +2,12 @@
 HEADER - VIDEOS PAGE
 ***************************************/
 
-.pictures-header {
-  background: linear-gradient(0deg, #fff, transparent 40%),
-              url("../img/videos-header.jpg") no-repeat center;
+.videos-header {
+  background: url("../img/videos-header.jpg") no-repeat center;
   background-size: cover;
+  height: 575px;
 }
 
-/***************************************
-NAV BAR - VIDEOS PAGE
-***************************************/
-
-a[href^="videos.html"] {
-  color: rgba(255, 255, 255, 0.44);
-}
 
 
 /***************************************

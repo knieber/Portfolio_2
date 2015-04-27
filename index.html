@@ -10,28 +10,43 @@
 
     <body>
       <header class="main-header home-header">
-        <div class="nav nav-header">
-          <nav>
-            <ul>
-              <li><a href="index.html">HOME</a></li>
-              <li><a href="pictures.html">PICTURES</a></li>
-              <li><a href="videos.html">VIDEOS</a></li>
-              <li><a href="development.html">WEB DEVELOPMENT</a></li>
-            </ul>
-          </nav>
+        <div class="headbg-overlay">
+          <div class="nav">
+            <nav>
+              <p><a href="index.html">{axiom}</a></p>
+              <div class="mainnav-right">
+                <ul>
+                  <a href="development.html"><li>WEB DEVELOPMENT</li></a>
+                  <a href="photography.html"><li>PHOTOGRAPHY</li></a>
+                  <a href="videos.html"><li>VIDEOS</li></a>
+                </ul>
+                <div class="farnav-right">
+                  <ul>
+                    <a href="#" class="contact"><li>CONTACT</li></a>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+
+
+
+
+  <!-- Home Title -->
+
+          <div class="header-wrapper">
+
+            <div class="title">
+                <h1>{axiom}</h1>
+                <h2>developer &middot; photographer &middot; videographer</h2>
+            </div>
+
+          </div>
+  <!-- End Home Title -->
+          <div class="contact-button">
+              <button name="contact-button">CONTACT ME</button>
+            </div>
         </div>
-
-<!-- Home Title -->
-
-        <div class="title">
-          <a href="index.html">
-            <h1>{axiom}</h1>
-            <h2>developer &middot; photographer &middot; videographer</h2>
-          </a>
-        </div>
-
-<!-- End Home Title -->
-
       </header>
 
 
@@ -43,24 +58,19 @@
 
         <div class="icon-block">
           <a href="development.html"><img class ="icon" src="img/Developer Icon.png"></a>
-          <p>Web design and development are the skills I'm most passionate
-            about. Although it is still fairly new to me, I am constantly
-            trying to learn and work on projects along the way.
+          <p>Web Development
           </p>
         </div>
 
         <div class="icon-block">
             <a href="pictures.html"><img class ="icon" src="img/Photo Icon.png"></a>
-          <p>I take shots of the city, nature, and anything interesting that
-            can help us to see our world from a different vantage point.
+          <p>Photography
           </p>
         </div>
 
         <div class="icon-block">
           <a href="videos.html"><img class ="icon video" src="img/video2.png"></a>
-          <p>Video was my first love and where I feel I have the most expertise.
-            I film anywhere from weddings, personal stories, or simply the
-            environtment around us.
+          <p>Videography
           </p>
         </div>
       </div>
@@ -68,19 +78,21 @@
 
 <!-- Second Section -->
       <div id="about-me">
-        <h3>Who I Am</h3>
-        <div class="about-block">
-          <img class="profile-icon" src="img/Kyle.jpg">
-          <div class="social-media">
-            <a href="http://www.facebook.com/kyle.nieber"><img src="img/facebook-icon.png"></a>
-            <a href="http://www.twitter.com/KyleNieber"><img src="img/twitter-icon.png"></a>
-            <a href="http://www.vimeo.com/kylenieber"><img src="img/vimeo-icon.png"></a>
+        <div class="about-me-overlay">
+          <h3>Who I Am</h3>
+          <div class="about-block">
+            <img class="profile-icon" src="img/Kyle.jpg">
+            <div class="social-media">
+              <a href="http://www.facebook.com/kyle.nieber"><img src="img/facebook-icon.png"></a>
+              <a href="http://www.twitter.com/KyleNieber"><img src="img/twitter-icon.png"></a>
+              <a href="http://www.vimeo.com/kylenieber"><img src="img/vimeo-icon.png"></a>
+            </div>
+            <p>My name is Kyle Nieber. I live in Louisville, KY and graduated from Murray State
+              University with a degree in Graphic Communications. I love to take photos, read books, hang out
+              with my wonderful wife, run, eat at Louisville restaurants, learn new things,
+              listen to NPR, and serve my church. However, if you really want to get to know me,
+              hit me up on facebook or twitter.</p>
           </div>
-          <p>My name is Kyle Nieber. I live in Louisville, KY and graduated from Murray State
-            University with a degree in Graphic Design. I love to take photos, read books, hang out
-            with my wonderful wife, Mary, run, eat at Louisville restaurant, learn new things,
-            listen to NPR, and serve my church. However, if you really want to get to know me,
-            hit me up on facebook or twitter.</p>
         </div>
       </div>
 <!-- End Second Section -->
@@ -93,26 +105,52 @@
       </div>
       <div class="social-media-footer-container">
           <div class="social-media-icon">
-            <a href="http://www.facebook.com/kyle.nieber"><img class="facebook-footer" src="img/facebook-icon-white.png"></a>
+            <a href="http://www.facebook.com/kyle.nieber"><img src="img/facebook-icon.png"></a>
           </div>
           <div class="social-media-icon">
-            <a href="http://www.twitter.com/KyleNieber"><img src="img/twitter-icon-white.png"></a>
+            <a href="http://www.twitter.com/KyleNieber"><img src="img/twitter-icon.png"></a>
           </div>
           <div class="social-media-icon">
-            <a href="http://www.vimeo.com/kylenieber"><img src="img/vimeo-icon-white.png"></a>
+            <a href="http://www.vimeo.com/kylenieber"><img src="img/vimeo-icon.png"></a>
           </div>
-      </div>
-      <div class="nav nav-footer">
-        <nav>
-          <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="pictures.html">PICTURES</a></li>
-            <li><a href="videos.html">VIDEOS</a></li>
-            <li><a href="projects.html">PROJECTS</a></li>
-          </ul>
-        </nav>
       </div>
     </footer>
+
+
+
+
+
+
+    <div class="contact-form">
+
+      <form action="/my-handling-form-page" method="post">
+
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" />
+        </div>
+        <div>
+          <label for="mail">E-mail:</label>
+          <input type="email" id="mail" />
+        </div>
+        <div>
+          <label for="mail">Confirm Email:</label>
+          <input type="email" id="mail" />
+        </div>
+        <div>
+          <label for="msg">Message:</label>
+          <textarea id="msg"></textarea>
+        </div>
+
+        <div class="button">
+          <button type="submit">Send your message</button>
+        </div>
+
+      </form>
+
+    </div>
+
+
     </body>
 
 </html>
