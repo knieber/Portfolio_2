@@ -30,6 +30,11 @@ HEADER - INDEX PAGE
   color: #fff;
 }
 
+.contact-button button:focus {
+  outline: 0;
+}
+
+
 
 /***************************************
 SECTION 1 - PORTFOLIO

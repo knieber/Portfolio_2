@@ -43,6 +43,8 @@
 
           </div>
   <!-- End Home Title -->
+
+  <!-- Contact ME button -->
           <div class="contact-button">
               <button name="contact-button">CONTACT ME</button>
             </div>
@@ -50,9 +52,11 @@
       </header>
 
 
+
+
 <!-- Home Page -->
 
-<!-- First Section -->
+<!-- First Section - PORTFOLIO -->
       <div id="portfolio">
         <h3>What I Do</h3>
 
@@ -76,7 +80,7 @@
       </div>
 <!-- End First Section -->
 
-<!-- Second Section -->
+<!-- Second Section - ABOUT ME -->
       <div id="about-me">
         <div class="about-me-overlay">
           <h3>Who I Am</h3>
@@ -120,26 +124,28 @@
 
 
 
-
+<!-- Contact Form -->
     <div class="contact-form">
 
       <form action="/my-handling-form-page" method="post">
 
-        <div>
-          <label for="name">Name:</label>
-          <input type="text" id="name" />
-        </div>
-        <div>
-          <label for="mail">E-mail:</label>
-          <input type="email" id="mail" />
-        </div>
-        <div>
-          <label for="mail">Confirm Email:</label>
-          <input type="email" id="mail" />
-        </div>
-        <div>
-          <label for="msg">Message:</label>
-          <textarea id="msg"></textarea>
+        <div class="form-wrapper">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" />
+          </div>
+          <div>
+            <label for="mail">E-mail</label>
+            <input type="email" id="mail" />
+          </div>
+          <div>
+            <label for="mail">Confirm Email</label>
+            <input type="email" id="mail" />
+          </div>
+          <div>
+            <label for="msg">Message</label>
+            <textarea id="msg"></textarea>
+          </div>
         </div>
 
         <div class="button">
@@ -150,6 +156,9 @@
 
     </div>
 
+<!-- JavaScript Call -->
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="js/form.js"></script>
 
     </body>
 
