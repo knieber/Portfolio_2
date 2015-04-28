@@ -52,14 +52,14 @@ SECTION 1 - PORTFOLIO
 }
 
 .icon-block {
-  padding-top: 20px;
+  margin-top: 15px;
   width: 27%;
   float: left;
   display: inline;
 }
 
 .icon-block p {
-  margin-top: 30px;
+  margin-top: 15px;
   font-weight: 600;
   letter-spacing: 1px;
 }
@@ -69,8 +69,8 @@ SECTION 1 - PORTFOLIO
 }
 
 .icon {
-  width: 125px;
-  height: 80px;
+  width: 140px;
+  height: 100px;
   padding-bottom: 5px;
 	-webkit-duration: .3s;
 	-moz-duration: .3s;
@@ -83,8 +83,8 @@ SECTION 1 - PORTFOLIO
 }
 
 .video {
-  padding: 20px 0 5px 0;
-  height: 60px;
+  padding: 20px 0 15px 0;
+  height: 70px;
 }
 
 /***************************************
