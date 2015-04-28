@@ -33,7 +33,7 @@ $(".contact").click(contactButton);
 
 
 //When overlay is clicked
-$overlay.click(function(){
+$formX.click(function(){
   //Hide the overlay
   $overlay.fadeOut(400, function() {
     $overlay.hide();
