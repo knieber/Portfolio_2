@@ -3,9 +3,11 @@
 
 var $overlay = $('<div id="overlay"></div>');
 var $form = $('.contact-form');
+var $formX = $('.form-x')
 
-
+$overlay.append($formX);
 $overlay.append($form);
+
 
 $("body").append($overlay);
 
@@ -20,6 +22,7 @@ function contactButton(event) {
   $form.fadeIn(400, function() {
     $form.show();
   });
+  $formX.show();
 
 }
 

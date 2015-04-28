@@ -132,8 +132,6 @@ nav {
 HEADER
 ***************************************/
 
-
-
 .header-wrapper {
   padding-top: 225px;
 }
@@ -295,6 +293,15 @@ textarea {
   left:0;
   display:none;
   text-align:center;
+}
+
+.form-x {
+  display: none;
+}
+
+.form-x img {
+  height: 20px;
+  width: 20px;
 }
 
 /***************************************
