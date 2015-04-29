@@ -13,9 +13,32 @@ HEADER - PHOTOGRAPHY PAGE
 INTRODUCTION - PHOTOGRAPHY PAGE
 ***************************************/
 
+.photoIntroduction {
+  height: 200px;
+  background: #6fcdaf;
+  padding: 30px 0 40px 0;
+}
+
+.photoIntroduction h3 {
+  margin: 0;
+  color: #282828;
+}
+
 .photoIntroduction p {
   width: 60%;
-  margin: auto;
+  margin: 30px auto;
+  font-size: 1rem;
+}
+
+.arrowDown p {
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 10px auto 20px auto;
+}
+
+.arrowDown img {
+  width: 30px;
 }
 
 /***************************************
@@ -24,7 +47,7 @@ PHOTO GALLERY - PHOTOGRAPHY PAGE
 
 .photoWrapper {
   width: 80%;
-  margin: auto;
+  margin: 60px auto;
   background: #000;
 }
 
@@ -53,13 +76,3 @@ FOOTER - PHOTOGRAPHY PAGE
 .main-footer, .push {
   clear: both;
 }
-/***************************************
-PALETTE
-
--2B4E72 - Water Ends
--2790B0 - Water Begins
--94BA65 - Grass Always Regrows
--353432 - Losing Hope
--4E4D4A - Dark Days
-
-***************************************/
