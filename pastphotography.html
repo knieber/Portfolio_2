@@ -65,35 +65,24 @@
 <!-- Section 2 - Photo Gallery Begin -->
 
       <div class="photoWrapper">
+        <div class="column1">
+        </div>
+        <div class="column2">
+        </div>
+        <div class="column3">
+        </div>
 
-        <!-- Photo's should have max height of 1000px and max width of 700px -->
+        <div class="photoStorage">
 
-        <img src="photoGallery/JPEG/image2.jpg">
-        <img src="photoGallery/JPEG/image1.jpg">
-        <img src="photoGallery/JPEG/image4.jpg">
-        <img src="photoGallery/JPEG/image3.jpg">
-        <img src="photoGallery/JPEG/image5.jpg">
-        <img src="photoGallery/JPEG/image6.jpg">
-        <img src="photoGallery/JPEG/image7.jpg">
-        <img src="photoGallery/JPEG/image8.jpg">
-        <img src="photoGallery/JPEG/image9.jpg">
-        <img src="photoGallery/JPEG/image10.jpg">
-        <img src="photoGallery/JPEG/image11.jpg">
-        <img src="photoGallery/JPEG/image12.jpg">
-        <img src="photoGallery/JPEG/image13.jpg">
-        <img src="photoGallery/JPEG/image14.jpg">
-        <img src="photoGallery/JPEG/image15.jpg">
-        <img src="photoGallery/JPEG/image16.jpg">
-        <img src="photoGallery/JPEG/image17.jpg">
-        <img src="photoGallery/JPEG/image18.jpg">
-        <img src="photoGallery/JPEG/image19.jpg">
-        <img src="photoGallery/JPEG/image20.jpg">
-        <img src="photoGallery/JPEG/image21.jpg">
-        <img src="photoGallery/JPEG/image22.jpg">
-        <img src="photoGallery/JPEG/image23.jpg">
-        <img src="photoGallery/JPEG/image24.jpg">
-        <img src="photoGallery/JPEG/image26.jpg">
-        <img src="photoGallery/JPEG/image27.jpg">
+          <img src="photoGallery/JPEG/image1.jpg">
+          <img src="photoGallery/JPEG/image6.jpg">
+          <img src="photoGallery/JPEG/image4.jpg">
+          <img src="photoGallery/JPEG/image2.jpg">
+          <img src="photoGallery/JPEG/image3.jpg">
+          <img src="photoGallery/JPEG/image5.jpg">
+
+        </div>
+
       </div>
 
       <!-- Push Div to keep footer below content -->
@@ -157,8 +146,27 @@
       <!-- JavaScript Call -->
           <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
           <script src="js/form.js"></script>
-          <script src="js/shuffle.js"></script>
+          <script src="js/photoGallery.js"></script>
 
         </body>
 
     </html>
+
+
+
+
+<!-- CSS -->
+
+.column1,
+.column2,
+.column3 {
+  background: #fff;
+  width: 30%;
+  float: left;
+  margin: 1.65%;
+  height: 100%;
+}
+
+.photoStorage {
+  display: none;
+}
