@@ -11,15 +11,45 @@
     <body>
     <div class="wrapper">
       <header class="main-header videos-header">
-        <div class="headbg-overlay">
-          <div class="nav">
+
+<!-- Full Nav -->
+          <div id="fullNav" class="nav">
             <nav>
-              <p><a href="index.html">{axiom}</a></p>
+              <div>
+              <p><a href="index.html">{axiom}</a>
+              </p>
+              </div>
               <div class="mainnav-right">
                 <ul>
                   <a href="development.html"><li>WEB DEVELOPMENT</li></a>
                   <a href="photography.html"><li>PHOTOGRAPHY</li></a>
-                  <a href="videos.html"><li id="selected">VIDEOS</li></a>
+                  <a class="selected" href="videos.html"><li>VIDEOS</li></a>
+                </ul>
+                <div class="farnav-right">
+                  <ul>
+                    <a href="#" class="contact"><li>CONTACT</li></a>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+
+
+<!-- Media Query Mobile Nav -->
+          <div id="mobileNav" class="nav">
+            <nav>
+              <div class="topNavButton">
+              <p>{axiom}
+                <img class ="menuLines" src="img/MenuLines.svg">
+              </p>
+              </div>
+              <div class="mainnav-right mobileListMenu">
+                <ul>
+                  <a href="index.html"><li>HOME</li></a>
+                  <a href="development.html"><li>WEB DEVELOPMENT</li></a>
+                  <a href="photography.html"><li>PHOTOGRAPHY</li></a>
+                  <a class="selected" href="videos.html"><li>VIDEOS</li></a>
+                  <a href="#" class="contact"><li>CONTACT</li></a>
                 </ul>
                 <div class="farnav-right">
                   <ul>
@@ -107,6 +137,7 @@
       <!-- JavaScript Call -->
           <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
           <script src="js/form.js"></script>
+          <script src="js/mobileNav.js"></script>
 
 
         </body>

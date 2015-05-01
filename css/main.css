@@ -46,7 +46,7 @@ NAV BAR
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 500;
+  z-index: 50;
   height: 60px;
 }
 
@@ -59,7 +59,7 @@ nav {
   height: 100%;
 }
 
-.nav p {
+.nav div p {
   text-align: left;
   float: left;
   margin: 0;
@@ -124,8 +124,12 @@ nav {
   padding-top: 18px;
 }
 
-#selected {
+.nav ul .selected li {
   color: rgb(255, 255, 255);
+}
+
+#mobileNav {
+  display: none;
 }
 
 /***************************************
@@ -166,6 +170,11 @@ HEADER
   border-color: #4E4D4A;
 }
 
+/*the below class will trigger from the mobilenav.js file
+when appropriate conditions are met*/
+.inactive {
+  pointer-events: none;
+}
 
 /***************************************
 FOOTER
@@ -229,6 +238,7 @@ form {
   width: 500px;
   margin: auto;
   height: 500px;
+  z-index: 50;
   background: #fff;
 }
 
@@ -297,6 +307,7 @@ textarea {
   left:0;
   display:none;
   text-align:center;
+  z-index: 100;
 }
 
 .form-x {
@@ -324,16 +335,36 @@ MEDIA QUERIES
 @media (max-width: 710px) {
 
   /***************************************
-  NAV BAR
+  HEADER
   ***************************************/
-
-  .nav {
-    height: 240px;
+  .title h1 {
   }
 
-  .nav p {
+  /***************************************
+  NAV BAR
+  ***************************************/
+  #fullNav {
+    display: none;
+  }
+
+  #mobileNav {
+    display: block;
+  }
+
+  .nav {
+    height: 60px;
+  }
+
+  .nav .mobileDiv {
+    display: block;
+  }
+
+  .nav div p {
     text-align: center;
     float: none;
+    color: #d7d7d7;
+    font-size: 1.5rem;
+    cursor: pointer;
   }
 
   .mainnav-right {
@@ -345,6 +376,7 @@ MEDIA QUERIES
   .mainnav-right ul {
     margin: auto;
     float: none;
+    display: none;
   }
 
   .mainnav-right ul li {
@@ -357,6 +389,12 @@ MEDIA QUERIES
     display: none;
     float: none;
     margin: auto;
+  }
+
+  .menuLines {
+    display: inline-block;
+    width: 25px;
+    height: 100%;
   }
 
   /***************************************
