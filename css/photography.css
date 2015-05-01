@@ -52,7 +52,7 @@ PHOTO GALLERY - PHOTOGRAPHY PAGE
 
 .photoWrapper {
   width: 85%;
-  margin: 70px auto 0px auto;
+  margin: 70px auto -20px auto;
   line-height: 10px;
   -webkit-column-count: 3;
   -webkit-column-gap: 10px;
@@ -98,6 +98,10 @@ MEDIA QUERY - PHOTO GALLERY
   -webkit-column-count: 2;
   column-count:         2;
   }
+
+  .photoIntroduction {
+    height: 320px;
+  }
 }
 
 @media (max-width: 710px) {
@@ -105,5 +109,9 @@ MEDIA QUERY - PHOTO GALLERY
   -moz-column-count:    1;
   -webkit-column-count: 1;
   column-count:         1;
+  }
+
+  .photoIntroduction {
+    height: 380px;
   }
 }
