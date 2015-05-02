@@ -23,4 +23,4 @@
 
 })(jQuery);
 
-$(".photoWrapper img").shuffle();
+$(".photoWrapper a").shuffle();
