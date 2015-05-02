@@ -198,7 +198,7 @@ FOOTER
   padding-top: 15px;
   padding-left: 15px;
   float: left;
-  width: 90px;
+  width: 120px;
 }
 
 .social-media-icon a img {
@@ -317,7 +317,7 @@ textarea {
   height: 30px;
   width: 30px;
   position: absolute;
-  top: 10%;
+  top: 5%;
   right: 2%;
 }
 
